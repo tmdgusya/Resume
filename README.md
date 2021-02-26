@@ -30,7 +30,7 @@
 그래서 여러 라이브러리를 찾아보았고, 간단한 ng-context-menu 라는 라이브러리를 찾아서 해당 라이브러리를 Custom 한뒤 회사의 MenuData Form 인터페이스에 맞춰서 모듈화 시킨뒤, 전역에서 사용할 수 있도록
 하였다. @Input Annotation 을 통해 MenuData 를 전달하도록 하였고, 해당 메뉴를 이용한 Context 들을 입력받아, 해당 함수와 Link 시켜 줄 수 있도록 하였다. 성공적으로 코드가 반영되었고 반영된 뒤 한번도 코드 수정을 하지 않았고, 버그도 발견되지 않았다. 해당 라이브러리를 통해 TypeScript 와 Angular 개발을 처음해보았는데, 되게 기분좋은 일이였다. 아래 코드 사용간 이용했던 설계도이다.
 
-![Context-menu 설계](./Contextmenu.png)
+![Context-menu 설계](https://raw.githubusercontent.com/tmdgusya/tmdgusya/main/Contextmenu.png)
 
 ### 해당 코드 연습했던 깃허브 링크
 
@@ -55,7 +55,7 @@
 그리고 테스트 프레임워크를 적용하게 되면서 함수단위로 명확히 구분되는 코드가 중요하다는 것이 테스트 하기 쉽고, 테스트 하기 쉽다는 말은, 함수 단위의 작업 프로세스가 한가지로 명확해 질 수 있다는 점에서 앞으로 나도 코드를 적을때 함수단위로 명확하게 적어야겠다는 생각이 들었다. 
 
 ### Git-lab CI/CD 에서의 UT TEST
-![파이프라인설계](./PipelineArch.png) 
+![파이프라인설계](https://raw.githubusercontent.com/tmdgusya/tmdgusya/main/PipelineArch.png) 
 - 위와 같이 파이프라인을 설계하기로 마음먹었다. 기존에는 Lint 와 Build 과정만 진행했으나, UT TEST 를 진행하고, 해당 Report 파일을 Git-lab Cache-Server 에 올린 뒤, Report 하는 단계에서 해당 파일을 사용할 수 있게 하였다.
 
 ### CI/CD 문제점
@@ -85,7 +85,7 @@ Test 결과는 Jest Framework 의 Collect Coverage 옵션을 통해 만들고, �
 처음에는 이게 뭐지 난잡한 마음이였지만, 쓰다보니 강력한 능력을 지닌 언어라는것을 깨닫게 되었다. 그래서 서버의 On / off 기능을 자동으로 설정할 수 있도록 하고,
 
 ### Git 을 통한 코드 최신 업데이트의 자동화
-![코드최신화](./ServerSide.png)
+![코드최신화](https://raw.githubusercontent.com/tmdgusya/tmdgusya/main/ServerSide.png)
 
 를 위와 같이 설계 하였다. Y 혹은 Yes 를 입력하면 알아서 build 과정까지 진행했으며, 그 과정에서 DB Connection 의 정보도 입력할 수 있도록 하였다. sed 이용! <br>
 이렇게 하기 싫은 귀찮은 일들도 자동화 할 수 있는 걸 알고 와 셸이란건 이렇게 보조적으로 알기만해도 정말 유용하다는 사실을 알게되었다. <br>
@@ -93,7 +93,7 @@ Test 결과는 Jest Framework 의 Collect Coverage 옵션을 통해 만들고, �
 그러다 회사에서 팀장님이 Mdfile을 Redmine으로 대량으로 문서를 옮겨야 하는 일이 필요했고, 나에게 도움을 요청했다.<br>
 기존에 있던 Pandoc 은 Textile 형태로는 바꿔주었으나, Redmine 에 맞게는 작성하지 못했고, 그래서 해당 과정을 수정해야 할 필요가 생겼다. 그래서 아래와 같은 설계도를 그렸다.
 
-![ConverToRedmine](./ConvertMD.png)
+![ConverToRedmine](https://raw.githubusercontent.com/tmdgusya/tmdgusya/main/ConvertMD.png)
 
 아래 깃허브에 코드가 적혀있다. 근데 Shell 을 자세하게 알지못하고, 코드를 적다보니 난잡한 부분이 있다. 빨리 옮겨야 하기 때문에 최대한 빨리짜느라 잘 설계하지 못했다.
 
