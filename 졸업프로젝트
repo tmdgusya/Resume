@@ -19,7 +19,7 @@
 
 그 당시에는 잘한줄 알았으나, 지금 보기엔 포폴로 보여주기 부끄러운 코드이다. 간단하게 도식으로 어떤걸 만들려했는지 표시하겠다.
 
-![Hanium](./Hanium.png)
+![https://raw.githubusercontent.com/tmdgusya/tmdgusya/main](./Hanium.png)
 
 위 기능들은 전부 구현했으나, GPS 데이터를 가공해서 공적인 데이터로 이용하려는 부분은 실패했다. 일단 처음 접하는 아두이노가 생각보다 어려웠고,
 BLE 통신이 Reference 가 많지 않아 우리가 원하는 방식대로 구현하는데 애를먹었다.. 이 과정을 진행하면서 진짜 BlueTooth 공식 싸이트에 메일을 보내보기도 했고, 실제로 Example 자료를 메일로 받았다.
